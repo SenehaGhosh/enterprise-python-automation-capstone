@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "enterprise-automation-capstone"
+version = "1.0.0"
+description = "Automated API Data Pipeline and PDF Report Generator"
+authors = [{ name = "Your Name" }]
+dependencies = [
+    "requests",
+    "reportlab",
+    "click",
+    "schedule"
+]
+
+[project.scripts]
+auto-report = "capstone.cli:cli"
